@@ -15,11 +15,19 @@ class ViewController: UITabBarController {
         view.backgroundColor = .cyan
         
         let home = HomeViewController()
-        home.tabBarItem.image = UIImage(named: "home")
-        home.tabBarItem.selectedImage = UIImage(named: "home_selected")
-        home.title = "Home"
-        addChild(home)
+        let homeNavi = UINavigationController(rootViewController: home)
+        
+        homeNavi.tabBarItem.image = UIImage(named: "home")
+        homeNavi.tabBarItem.selectedImage = UIImage(named: "home_selected")
+        homeNavi.title = "Home"
+        addChild(homeNavi)
+        
+        homeNavi.navigationBar.isTranslucent = false;
     
+        let add = AddViewController()
+        add.tabBarItem.image = UIImage(systemName: "heart")
+        add.title = "Add"
+        addChild(add)
         
         let schedule = ScheduleViewController()
         schedule.tabBarItem.image = UIImage(named: "mine")
@@ -29,8 +37,6 @@ class ViewController: UITabBarController {
         
         let tabBar = TabBarView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 100))
         self.setValue(tabBar, forKey: "tabBar")
-        //self.setRootTabbarConntroller()
-        //self.tabBarItem = TabBarView()
     }
 }
 

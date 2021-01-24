@@ -11,7 +11,8 @@ class TabBarView: UITabBar {
 
     var width: CGFloat;
     var height: CGFloat;
-    
+    private var r: CGFloat = 40
+    private var corner: CGFloat = 20
     private var shapeLayer: CALayer?
     
     override init(frame: CGRect) {
@@ -46,10 +47,14 @@ class TabBarView: UITabBar {
         
         let path = UIBezierPath()
         path.move(to: .zero)
-        path.addLine(to: CGPoint(x: width / 2  - 40, y: 0))
-        //path.addQuadCurve(to: CGPoint(x: width / 2 - 40, y : -5), controlPoint:  CGPoint(x: width / 2  - 45, y: 0))
-        path.addQuadCurve(to: CGPoint(x: width / 2 + 40, y:0), controlPoint: CGPoint(x: width / 2, y: -20))
-        //path.addar(to: CGPoint(x: width / 2 + 40, y:0), controlPoint: CGPoint(x: width / 2, y: -20))
+        path.addLine(to: CGPoint(x: width / 2  - r - corner, y: 0))
+        
+        path.addCurve(to: CGPoint(x: width / 2 , y: -20), controlPoint1: CGPoint(x: width / 2 - r + corner / 2 , y: 0),
+                      controlPoint2: CGPoint(x: width / 2 - r + corner / 2, y: -20))
+        
+        path.addCurve(to: CGPoint(x: width / 2 + r + corner, y: 0), controlPoint1: CGPoint(x: width / 2 + r - corner / 2, y: -20),
+                      controlPoint2: CGPoint(x: width / 2 + r - corner / 2, y: 0))
+        
         path.addLine(to: CGPoint(x: width, y: 0))
         path.addLine(to: CGPoint(x: width, y: height))
         path.addLine(to: CGPoint(x: 0, y: height))
