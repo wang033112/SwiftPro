@@ -22,7 +22,7 @@ class ViewController: UITabBarController {
         homeNavi.title = "Home"
         addChild(homeNavi)
         
-        homeNavi.navigationBar.isTranslucent = false;
+        //homeNavi.navigationBar.isHidden = true;
     
         let add = AddViewController()
         add.tabBarItem.image = UIImage(systemName: "heart")

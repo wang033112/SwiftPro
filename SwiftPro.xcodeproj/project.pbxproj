@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A099B77125BD67C600EA7E69 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A099B77025BD67C600EA7E69 /* AddViewController.swift */; };
 		A099B77425BDAB5900EA7E69 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A099B77325BDAB5900EA7E69 /* DetailViewController.swift */; };
+		A0B1283225CFBE9B00A4EA00 /* ScrollImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B1283125CFBE9B00A4EA00 /* ScrollImageView.swift */; };
 		A0E76CCD25BC1C9700CA6A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E76CCC25BC1C9700CA6A5B /* AppDelegate.swift */; };
 		A0E76CCF25BC1C9700CA6A5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E76CCE25BC1C9700CA6A5B /* SceneDelegate.swift */; };
 		A0E76CD125BC1C9700CA6A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E76CD025BC1C9700CA6A5B /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		A099B77025BD67C600EA7E69 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		A099B77325BDAB5900EA7E69 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A0B1283125CFBE9B00A4EA00 /* ScrollImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollImageView.swift; sourceTree = "<group>"; };
 		A0E76CC925BC1C9700CA6A5B /* SwiftPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E76CCC25BC1C9700CA6A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0E76CCE25BC1C9700CA6A5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				A0E76CEA25BC3D1400CA6A5B /* TabBarView.swift */,
+				A0B1283125CFBE9B00A4EA00 /* ScrollImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				A0E76CCF25BC1C9700CA6A5B /* SceneDelegate.swift in Sources */,
 				A0E76CEB25BC3D1400CA6A5B /* TabBarView.swift in Sources */,
 				A0E76CE425BC344700CA6A5B /* HomeViewController.swift in Sources */,
+				A0B1283225CFBE9B00A4EA00 /* ScrollImageView.swift in Sources */,
 				A099B77425BDAB5900EA7E69 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
