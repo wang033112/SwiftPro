@@ -22,6 +22,17 @@ class HomeViewController: UIViewController {
         //let imagesURL = ["home", "mine"]
         let homeScroll = ScrollImageView(CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 230), images: imagesURL)
         self.view.addSubview(homeScroll)
+        
+        let productList = ContentView(frame: .zero)
+    
+        productList.items = DammyData.createProducts()
+        view.addSubview(productList)
+        productList.snp.makeConstraints { (make) in
+            make.left.right.bottom.equalToSuperview()
+            make.top.equalTo(homeScroll.snp.bottom).offset(5)
+        }
+        
+        self.view.addSubview(productList)
 //        self.title = "ホーム"
 //        self.navigationController?.navigationBar.barTintColor = .white
 //        self.navigationController?.navigationBar.tintColor = .darkGray

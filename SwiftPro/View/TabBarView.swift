@@ -19,7 +19,7 @@ class TabBarView: UITabBar {
         width = frame.width
         height = frame.height
         super.init(frame: frame)
-        //self.backgroundColor = .blue
+        //self.backgroundColor = UIColor.init(code: "#344955")
         
         let layer = createLayer()
         
@@ -43,7 +43,7 @@ class TabBarView: UITabBar {
         let layer = CAShapeLayer()
         layer.cornerRadius = 5
         //layer.strokeColor = UIColor.gray.cgColor
-        layer.fillColor = UIColor.white.cgColor
+        layer.fillColor = UIColor.init(code: "#E3F2FD").cgColor
         
         let path = UIBezierPath()
         path.move(to: .zero)

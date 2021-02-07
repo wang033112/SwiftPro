@@ -1,0 +1,6 @@
+framework module Pods_SwiftPro {
+  umbrella header "Pods-SwiftPro-umbrella.h"
+
+  export *
+  module * { export * }
+}
